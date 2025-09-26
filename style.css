@@ -1,0 +1,182 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #0b0b13, #1a1a2e 60%, #2a1b3d);
+    color: #e0e0e0;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #b084f5;
+    text-shadow: 0 0 8px rgba(176, 132, 245, 0.4);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover, h2:hover {
+    color: #d1b3ff;
+    text-shadow: 0 0 12px rgba(209, 179, 255, 0.6);
+}
+
+/* Formulario */
+form {
+    background: rgba(15, 15, 25, 0.95);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 40px;
+    box-shadow: 0 0 20px rgba(176, 132, 245, 0.15);
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(176, 132, 245, 0.25);
+}
+
+/* Inputs */
+form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #2e1f44;
+    border-radius: 10px;
+    outline: none;
+    background: #12121c;
+    color: #e0e0e0;
+    font-size: 15px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus {
+    border: 1px solid #b084f5;
+    box-shadow: 0 0 10px rgba(176, 132, 245, 0.4);
+}
+
+/* Botones */
+button {
+    display: inline-block;
+    background: linear-gradient(90deg, #6a11cb, #a269ff);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #7b2ff7, #c184ff);
+    box-shadow: 0 0 15px rgba(162, 105, 255, 0.5);
+}
+
+/* Botón Eliminar */
+#delete {
+    display: block;
+    margin: 15px auto;
+    background: linear-gradient(90deg, #c62828, #ff4d6d);
+}
+
+#delete:hover {
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.6);
+}
+
+/* Link cursos */
+a {
+    display: block;
+    text-align: center;
+    color: #b084f5;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #d1b3ff;
+    text-shadow: 0 0 8px rgba(209, 179, 255, 0.6);
+}
+
+/* --- TABLA --- */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 900px;
+    background: rgba(28, 28, 43, 0.95);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Encabezado */
+thead {
+    background: linear-gradient(90deg, #a770ef, #cf8bf3);
+    color: #fff;
+}
+
+thead td {
+    padding: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* Filas */
+tbody tr {
+    transition: background 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: #242437;
+}
+
+tbody tr:nth-child(odd) {
+    background: #1a1a2e;
+}
+
+tbody tr:hover {
+    background: #3a2d54;
+}
+
+/* Celdas */
+td {
+    padding: 12px;
+    font-size: 15px;
+    color: #e6e6e6;
+}
+
+/* Bordes suaves */
+td, thead td {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+    td, thead td {
+        padding: 10px;
+    }
+}

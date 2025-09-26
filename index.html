@@ -5,114 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo 1</title>
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* Fondo general */
-        body {
-            background: linear-gradient(135deg, #0f0f1e, #2b2b57 60%, #573066);
-            color: #f1f1f1;
-            min-height: 100vh;
-            padding: 30px;
-        }
-
-        /* Títulos */
-        h1,
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-weight: 700;
-            color: #00f0ff;
-            /* tono LED */
-            text-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
-        }
-
-        /* Formulario */
-        form {
-            background: rgba(20, 20, 35, 0.8);
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 500px;
-            margin: 0 auto 30px;
-            box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
-            transition: all 0.3s ease-in-out;
-        }
-
-        form:hover {
-            box-shadow: 0 0 30px rgba(0, 240, 255, 0.25);
-        }
-
-        /* Inputs */
-        form input {
-            width: 100%;
-            margin-bottom: 15px;
-            padding: 12px;
-            border: none;
-            border-radius: 10px;
-            outline: none;
-            background: #1e1e2e;
-            color: #fff;
-            font-size: 15px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        form input:focus {
-            border: 1px solid #00f0ff;
-            box-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
-        }
-
-        /* Botones */
-        button {
-            display: inline-block;
-            background: linear-gradient(90deg, #00f0ff, #7c5cff);
-            border: none;
-            padding: 12px 18px;
-            border-radius: 10px;
-            color: #fff;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.3s ease;
-        }
-
-        button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 0 15px rgba(124, 92, 255, 0.5);
-        }
-
-        /* Botón Eliminar */
-        #delete {
-            display: block;
-            margin: 15px auto;
-            background: linear-gradient(90deg, #ff4d6d, #ff81b3);
-        }
-
-        #delete:hover {
-            box-shadow: 0 0 15px rgba(255, 77, 109, 0.5);
-        }
-
-        /* Link cursos */
-        a {
-            display: block;
-            text-align: center;
-            color: #00f0ff;
-            text-decoration: none;
-            margin-top: 20px;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #7c5cff;
-            text-shadow: 0 0 8px rgba(124, 92, 255, 0.7);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 <body>
     <h1>Gestion de cursos</h1>
@@ -131,7 +24,7 @@
     <br>
     <a href="cursos.html">Ver cursos</a>
 
-    <script src="mian.js"></script>
+    <script src="mianAregloObjetos.js"></script>
 </body>
 
 </html>
